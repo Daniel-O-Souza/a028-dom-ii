@@ -2,7 +2,9 @@ function  adicionaItem(event) {
 
     const newArticle = document.createElement("article")
 
-    const newContent = document.createTextNode("Teste")
+    newArticle.setAttribute("class", "item")
+
+    const newContent = document.createTextNode("")
 
     newArticle.appendChild(newContent)
 
@@ -10,4 +12,13 @@ function  adicionaItem(event) {
 
     container.insertAdjacentElement("beforeend", newArticle)
  
+    
+}
+
+
+
+function removeItem(event){
+
+    event.target.remove()
+
 }
